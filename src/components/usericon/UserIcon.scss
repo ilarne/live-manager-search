@@ -1,0 +1,11 @@
+.user-icon {
+  background: #faa55f;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 20%;
+
+  &.active {
+    background: #5db4cf;
+  }
+}
