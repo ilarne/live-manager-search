@@ -5,9 +5,9 @@ import SearchContainer from "./searchcontainer/SearchContainer";
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
+      <div>
         <SearchContainer />
-      </React.Fragment>
+      </div>
     );
   }
 }
