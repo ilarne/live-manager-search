@@ -3,6 +3,7 @@
   flex-direction: row;
   border: solid 0.5px #c5c5c5;
   background: #ffffff;
+  border-radius: 3%;
 
   &.active {
     background: #f6fcfa;
@@ -19,5 +20,5 @@
 
 .col-2 {
   order: 2;
-  width: 50px;
+  width: 100px;
 }
