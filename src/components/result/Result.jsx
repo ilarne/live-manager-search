@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../App.css";
+import "../../App.css";
 import UserIcon from "../usericon/UserIcon";
 import "./Result.css";
 
@@ -27,22 +27,27 @@ class Result extends Component {
   };
 
   render() {
+    const { fullName, firstName, lastName } = this.props;
     return (
-      <div
+      <li
         onMouseEnter={this.hoverOn}
         onMouseLeave={this.hoverOff}
         className={this.getResultContainerClass()}
       >
         <div className="col-1">
-          <UserIcon selected={this.state.selected} />
+          <UserIcon
+            selected={this.state.selected}
+            lastName={lastName}
+            firstName={firstName}
+          />
         </div>
         <div className="col-2">
           <div className="user-data-container">
-            <span className={this.getNameSpanClass()}>Name</span>
+            <span className={this.getNameSpanClass()}>{fullName}</span>
           </div>
           <span className="text text-secondary">Email</span>
         </div>
-      </div>
+      </li>
     );
   }
 }

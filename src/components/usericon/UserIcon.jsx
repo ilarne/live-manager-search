@@ -3,16 +3,27 @@ import "./UserIcon.css";
 
 class UserIcon extends Component {
   render() {
+    const { firstName, lastName, selected } = this.props;
     return (
-      <div className={this.getUserIconClass()}>
-        <span className="text-initials">IL</span>
+      <div className={this.getUserIconClass(selected)}>
+        <span className="text-initials">
+          {this.getInitials(firstName, lastName)}
+        </span>
       </div>
     );
   }
 
-  getUserIconClass = () => {
+  getInitials = (firstName, lastName) => {
+    console.log(lastName);
+    const firstNameInitial = firstName.charAt(0);
+    const lastNameInitial = lastName.charAt(0);
+    const fullInitials = firstNameInitial + lastNameInitial;
+    return fullInitials;
+  };
+
+  getUserIconClass = selected => {
     let classes = "user-icon ";
-    classes += this.props.selected ? "active" : "";
+    classes += selected ? "active" : "";
     return classes;
   };
 }
