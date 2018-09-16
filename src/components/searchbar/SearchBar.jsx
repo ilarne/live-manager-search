@@ -20,13 +20,16 @@ class SearchBar extends Component {
     this.setState({ data: response.data });
   }
 
-  handleUserInput = () => {
-    this.setState({
-      query: this.input.value
-    });
+  handleUserInput = event => {
+    const value = event.target.value;
+    this.setState({ query: value });
+    this.updateResults(value);
+  };
+
+  updateResults = value => {
     if (this.state.query.length === 1) {
       this.setState({
-        query: this.input.value,
+        query: value,
         data: []
       });
     } else {
@@ -40,7 +43,8 @@ class SearchBar extends Component {
         <form>
           <input
             className="text text-primary searchBar"
-            ref={input => (this.input = input)}
+            type="text"
+            value={this.state.query}
             placeholder="Choose Manager"
             onChange={this.handleUserInput}
           />
