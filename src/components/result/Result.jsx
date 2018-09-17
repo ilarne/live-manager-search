@@ -45,7 +45,6 @@ class Result extends Component {
           <div className="user-data-container">
             <span className={this.getNameSpanClass()}>{fullName}</span>
           </div>
-          <span className="text text-secondary">Email</span>
         </div>
       </li>
     );
