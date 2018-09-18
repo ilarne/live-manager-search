@@ -4,7 +4,7 @@ import UserIcon from "../usericon/UserIcon";
 import "./Result.css";
 
 class Result extends Component {
-  state = { selected: false };
+  state = { selected: false, email: "" };
 
   hoverOn = () => {
     this.setState({ selected: true });
@@ -21,10 +21,15 @@ class Result extends Component {
   };
 
   getNameSpanClass = () => {
-    let classes = "text text-secondary ";
+    let classes = "text ";
     classes += this.state.selected ? "active" : "";
     return classes;
   };
+
+  async componentDidMount() {
+    const email = await this.props.email;
+    this.setState({ email: email });
+  }
 
   render() {
     const { fullName, firstName, lastName } = this.props;
@@ -47,6 +52,9 @@ class Result extends Component {
             <span data-cy="results-name" className={this.getNameSpanClass()}>
               {fullName}
             </span>
+            <div>
+              <span className="text text-secondary">{this.state.email}</span>
+            </div>
           </div>
         </div>
       </li>
