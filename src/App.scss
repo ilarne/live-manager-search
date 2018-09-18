@@ -3,7 +3,8 @@
 }
 
 .text {
-  font-size: 7px;
+  font-size: 15px;
+  color: #636363;
 
   ::placeholder {
     color: #c5c5c5;
@@ -14,16 +15,12 @@
   }
 }
 
-.text-primary {
-  color: #636363;
-}
-
 .text-secondary {
-  color: #c5c5c5;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .text-initials {
   color: #ffffff;
-  font-size: 9px;
+  font-size: 15px;
+  margin-top: 10px;
 }
