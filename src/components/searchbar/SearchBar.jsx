@@ -42,7 +42,6 @@ class SearchBar extends Component {
             className="text text-primary searchBar"
             type="text"
             autoFocus
-            value={this.state.query}
             placeholder="Choose Manager"
             onInput={this.handleUserInput}
             onChange={this.handleUserInput}
