@@ -52,7 +52,7 @@ class Result extends Component {
             <span data-cy="results-name" className={this.getNameSpanClass()}>
               {fullName}
             </span>
-            <div>
+            <div className="email-container">
               <span className="text text-secondary">{this.state.email}</span>
             </div>
           </div>
