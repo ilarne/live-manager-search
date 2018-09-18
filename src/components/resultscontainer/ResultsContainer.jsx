@@ -6,8 +6,6 @@ import axios from "axios";
 const BASE_API_URL = "http://localhost:3001/";
 
 class ResultsContainer extends Component {
-  // state = { email: "" };
-
   async getEmail(manager) {
     const emailId = manager.relationships.account.data.id;
     if (emailId) {
