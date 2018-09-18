@@ -6,7 +6,7 @@
   font-size: 15px;
   color: #636363;
 
-  ::placeholder {
+  &::placeholder {
     color: #c5c5c5;
   }
 
@@ -16,7 +16,8 @@
 }
 
 .text-secondary {
-  font-size: 12px;
+  font-size: 10px;
+  color: #828282;
 }
 
 .text-initials {

@@ -4,13 +4,14 @@
 .text {
   font-size: 15px;
   color: #636363; }
-  .text ::placeholder {
+  .text::placeholder {
     color: #c5c5c5; }
   .text.active {
     color: #83c5aa; }
 
 .text-secondary {
-  font-size: 12px; }
+  font-size: 10px;
+  color: #828282; }
 
 .text-initials {
   color: #ffffff;
