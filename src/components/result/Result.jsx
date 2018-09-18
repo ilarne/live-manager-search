@@ -21,7 +21,7 @@ class Result extends Component {
   };
 
   getNameSpanClass = () => {
-    let classes = "text text-primary ";
+    let classes = "text text-secondary ";
     classes += this.state.selected ? "active" : "";
     return classes;
   };
@@ -30,6 +30,7 @@ class Result extends Component {
     const { fullName, firstName, lastName } = this.props;
     return (
       <li
+        data-cy="results-box"
         onMouseEnter={this.hoverOn}
         onMouseLeave={this.hoverOff}
         className={this.getResultContainerClass()}
@@ -43,7 +44,9 @@ class Result extends Component {
         </div>
         <div className="col-2">
           <div className="user-data-container">
-            <span className={this.getNameSpanClass()}>{fullName}</span>
+            <span data-cy="results-name" className={this.getNameSpanClass()}>
+              {fullName}
+            </span>
           </div>
         </div>
       </li>
