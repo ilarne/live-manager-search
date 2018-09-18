@@ -3,7 +3,7 @@ import Result from "../result/Result";
 import "./ResultsContainer.css";
 import axios from "axios";
 
-const BASE_API_URL = "http://localhost:3001/";
+export const BASE_API_URL = "http://localhost:3001/";
 
 class ResultsContainer extends Component {
   async getEmail(manager) {

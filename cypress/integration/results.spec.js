@@ -10,14 +10,12 @@ describe("Results", () => {
   });
 
   it("Shows a manager when their name is entered", () => {
-    cy.get("[data-cy=searchBar]").type(inputText);
-    cy.wait(1000);
-    cy.contains("[data-cy=results-name]", inputText);
+    cy.inputTextToSearchbar(inputText);
+    cy.get("[data-cy=results-name]").contains(inputText);
   });
 
   it("Shows a manager's initials when their name is entered", () => {
-    cy.get("[data-cy=searchBar]").type(inputText);
-    cy.wait(1000);
+    cy.inputTextToSearchbar(inputText);
     cy.contains("[data-cy=initials]", "HB");
     cy.contains("[data-cy=initials]", "HM");
   });

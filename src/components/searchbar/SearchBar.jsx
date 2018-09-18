@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "../../App.css";
-import ResultsContainer from "../resultscontainer/ResultsContainer";
+import ResultsContainer, {
+  BASE_API_URL
+} from "../resultscontainer/ResultsContainer";
 import axios from "axios";
-
-const BASE_API_URL = "http://localhost:3001/";
 
 class SearchBar extends Component {
   state = { results: [] };
