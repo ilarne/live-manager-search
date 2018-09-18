@@ -1,7 +1,7 @@
 .search-container {
   background: #f9f9f9;
-  width: 150px;
-  height: 25px;
+  width: 200px;
+  height: 40px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -10,7 +10,7 @@
 
 .searchBar {
   border: 0.5px solid #c5c5c5;
-  border-radius: 2%;
-  width: 145px;
-  height: 18px;
+  border-radius: 5%;
+  width: 200px;
+  height: 40px;
   margin-left: 1px; }
