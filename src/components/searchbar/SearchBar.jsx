@@ -3,7 +3,7 @@ import "../../App.css";
 import ResultsContainer from "../resultscontainer/ResultsContainer";
 import axios from "axios";
 
-const BASE_API_URL = "http://localhost:3001/data";
+const BASE_API_URL = "http://localhost:3001/";
 
 class SearchBar extends Component {
   state = { results: [] };
@@ -20,7 +20,7 @@ class SearchBar extends Component {
   async filterManagers(query) {
     if (query.length >= 2) {
       const response = await axios.get(
-        `${BASE_API_URL}?attributes.name_like=${query}`,
+        `${BASE_API_URL}data?attributes.name_like=${query}`,
         null,
         {
           data: {},
