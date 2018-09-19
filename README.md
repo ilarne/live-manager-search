@@ -9,13 +9,13 @@ I should see a list of related managers
 
 1. Run the backend server: ```$json-server db.json --port 3001```
 
-(N.B. the development version of the app requires the use of port 3001 for the backend server. If this is already in use please kill the process.
+*(N.B. the development version of the app requires the use of port 3001 for the backend server. If this is already in use please kill the process)*
 
 2. Build css: `npm run build-css`
 
 3. Start app: `npm start`
 
-(N.B. this development version of the app requires the use of port 3000  for the app as the tests point to this URL. If this is already in use please kill the process.
+*(N.B. this development version of the app requires the use of port 3000  for the app as the tests point to this URL. If this is already in use please kill the process)*
 
 4. Integration tests: `node_modules/.bin/cypress open`
 (N.B. requires application and backend server to be running)
