@@ -17,7 +17,7 @@ I should see a list of related managers
 
 (N.B. this development version of the app requires the use of port 3000  for the app as the tests point to this URL. If this is already in use please kill the process.
 
-Integration tests: `node_modules/.bin/cypress open`
+4. Integration tests: `node_modules/.bin/cypress open`
 (N.B. requires application and backend server to be running)
 
 # Implementation notes 
