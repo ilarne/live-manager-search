@@ -11,13 +11,13 @@ I should see a list of related managers
 
 2. Install dependencies: `npm install`
 
-3. Run the backend server: ```json-server db.json --port 3001```
+3.  Build css: `npm run build-css`
+
+4. Run the backend server: ```json-server db.json --port 3001```
 
 *(N.B. the development version of the app requires the use of port 3001 for the backend server. If this is already in use please kill the process)*
 
-4. Build css: `npm run build-css`
-
-5. Start app: `npm start`
+5. In another terminal tab, navigate to `live-manager-search` and start app: `npm start`
 
 *(N.B. this development version of the app requires the use of port 3000  for the app as the tests point to this URL. If this is already in use please kill the process)*
 
